@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace BlazorApp;
 
-public class ServerWeatherService : IWeatherService
+public class ServerWeatherServiceCopy 
 {
 
     private string _filePath;
@@ -16,6 +16,8 @@ public class ServerWeatherService : IWeatherService
     private UTF8Encoding _encoding = new UTF8Encoding();
 
     private const char SPLIT_CHAR = '=';
+
+
 
     public void Save()
     {
